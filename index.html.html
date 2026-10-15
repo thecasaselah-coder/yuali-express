@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יואלי אקספרס - המומלצים הבדוקים</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Heebo', 'sans-serif'], serif: ['Frank Ruhl Libre', 'serif'] },
+                    colors: { premium: '#0a0a0a', surface: '#f4f4f4', highlight: '#e5e5e5' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #ffffff; color: #0a0a0a; }
+        .sharp-edge { border-radius: 0 !important; }
+        .product-card { border: 1px solid transparent; transition: all 0.2s ease-in-out; }
+        .product-card:hover { border-color: #0a0a0a; box-shadow: 8px 8px 0px #0a0a0a; transform: translate(-4px, -4px); }
+        .img-container img { filter: grayscale(100%); transition: filter 0.5s ease; }
+        .product-card:hover .img-container img { filter: grayscale(0%); }
+        .ad-banner { background: repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 10px, #ffffff 10px, #ffffff 20px); border: 2px dashed #ccc; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="border-b-4 border-premium py-6 px-4 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 bg-white z-50">
+        <div class="font-serif text-5xl font-black tracking-tighter uppercase mb-4 md:mb-0">
+            יואלי<span class="font-light text-gray-400">אקספרס</span>
+        </div>
+        <div class="w-full md:w-1/3 relative">
+            <input type="text" id="searchInput" placeholder="חפש מוצר, מותג או קטגוריה..." class="w-full border-2 border-premium p-3 sharp-edge font-bold outline-none focus:bg-premium focus:text-white transition-colors">
+        </div>
+    </nav>
+
+    <!-- Ad Space -->
+    <div class="max-w-7xl mx-auto mt-8 h-24 ad-banner flex items-center justify-center text-gray-400 font-bold tracking-widest text-sm uppercase cursor-pointer hover:border-premium transition-colors">
+        שטח פרסום לבעלי עסקים - לחץ לפרטים
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <header class="text-center mb-16">
+            <h1 class="font-serif text-6xl md:text-8xl font-black mb-6">נבחר בקפידה.</h1>
+            <p class="text-xl md:text-2xl font-light text-gray-500 max-w-2xl mx-auto">הקישורים שעברו את הסינון שלנו. בלי הפתעות בדואר.</p>
+        </header>
+
+        <!-- Filters -->
+        <div id="filters" class="flex flex-wrap justify-center gap-3 mb-16 border-y-2 border-highlight py-6">
+            <!-- כפתורים ייווצרו דינמית מה-JS -->
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="text-center py-20 font-bold text-2xl animate-pulse">טוען נתונים...</div>
+
+        <!-- Grid -->
+        <div id="grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 hidden">
+            <!-- מוצרים ייווצרו דינמית מה-JS -->
+        </div>
+        
+        <div id="noResults" class="hidden text-center py-20 font-serif text-4xl text-gray-400">
+            לא מצאנו מוצרים שתואמים לחיפוש.
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

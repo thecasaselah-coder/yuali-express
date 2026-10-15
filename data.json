@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "title": "שמלת מידי אלגנטית - קפדני",
+        "category": "נשים - חרדי",
+        "price": "₪120",
+        "description": "בד לא קמיט, אורך תקין לחלוטין, עבר כביסה ללא כיווץ. מושלם לשבת.",
+        "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600",
+        "affiliateLink": "https://www.aliexpress.com",
+        "store": "AliExpress"
+    },
+    {
+        "id": "2",
+        "title": "חצאית מעטפת מודרנית",
+        "category": "נשים - מודרני",
+        "price": "₪85",
+        "description": "גזרה עדכנית עם שסע נסתר קל. יושב מעולה על הגוף.",
+        "imageUrl": "https://images.unsplash.com/photo-1583496924840-02bf7cc0f269?w=600",
+        "affiliateLink": "https://il.shein.com",
+        "store": "Shein"
+    },
+    {
+        "id": "3",
+        "title": "סט פיג'מה לילדים 100% כותנה",
+        "category": "ילדים ותינוקות",
+        "price": "₪45",
+        "description": "הוזמן פעמיים על ידי משתמשים בפרוג. מידות תואמות לגיל.",
+        "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600",
+        "affiliateLink": "https://www.next.co.il",
+        "store": "Next"
+    },
+    {
+        "id": "4",
+        "title": "מעיל חורף מחמם לגברים",
+        "category": "גברים",
+        "price": "₪150",
+        "description": "מעיל אלגנטי, מתאים מעל חליפה, מגיע תוך שבועיים.",
+        "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600",
+        "affiliateLink": "https://www.aliexpress.com",
+        "store": "AliExpress"
+    }
+]
